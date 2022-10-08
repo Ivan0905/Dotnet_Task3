@@ -1,18 +1,16 @@
 ﻿// Домашнее задание №3
 
-//Задача 21
-//Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между
-// ними в 3D пространстве.
+//Задача 23
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-Console.WriteLine("Введите координаты первой точки: ");
-double x1 = Convert.ToDouble(Console.ReadLine()!);
-double y1 = Convert.ToDouble(Console.ReadLine()!);
-double z1 = Convert.ToDouble(Console.ReadLine()!);
-Console.WriteLine("Введите координаты второй точки: ");
-double x2 = Convert.ToDouble(Console.ReadLine()!);
-double y2 = Convert.ToDouble(Console.ReadLine()!);
-double z2 = Convert.ToDouble(Console.ReadLine()!);
+Console.WriteLine("Введите число: ");
+int x1 = int.Parse(Console.ReadLine()!);
+int i = 0;
+int result = 0;
+while (i <= x1)
+{
 
-double len = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)+Math.Pow ((z2-z1),2));
-
-Console.WriteLine($"Расстояние между точками равняется {len:f3}");
+    result = Convert.ToInt32(Math.Pow(i, 3));
+    Console.WriteLine($"{i}^3 = {result}");
+    i++;
+}
